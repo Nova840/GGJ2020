@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawnpoints : MonoBehaviour {
+public class LevelData : MonoBehaviour {
 
     [SerializeField]
     private Transform leftSpawnpoint = null;
@@ -12,7 +12,11 @@ public class Spawnpoints : MonoBehaviour {
     private Transform rightSpawnpoint = null;
     public static Transform RightSpawnpoint { get { return instance.rightSpawnpoint; } }
 
-    private static Spawnpoints instance;
+    [SerializeField]
+    private float levelSizeForCamera = 10;
+    public static float LevelSizeForCamera { get { return instance.levelSizeForCamera; } }
+
+    private static LevelData instance;
 
     private void Awake() {
         instance = this;

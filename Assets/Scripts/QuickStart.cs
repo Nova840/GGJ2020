@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class QuickStart : MonoBehaviour {
 
+    [SerializeField]
+    private string defaultLevelName = "";
+
     private static bool usedQuickStart = false;
 
     private void Awake() {
@@ -13,8 +16,12 @@ public class QuickStart : MonoBehaviour {
         } else {
             usedQuickStart = true;
             string currentSceneName = SceneManager.GetActiveScene().name;
-            SceneManager.LoadScene("Game", LoadSceneMode.Single);
-            SceneManager.LoadScene(currentSceneName, LoadSceneMode.Additive);
+            if (currentSceneName != "Game") {
+                SceneManager.LoadScene("Game", LoadSceneMode.Single);
+                SceneManager.LoadScene(currentSceneName, LoadSceneMode.Additive);
+            } else {
+                SceneManager.LoadScene(defaultLevelName, LoadSceneMode.Additive);
+            }
         }
     }
 

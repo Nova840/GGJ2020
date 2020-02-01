@@ -23,18 +23,15 @@ public class CameraController : MonoBehaviour {
     [SerializeField]
     private Image dividerImage = null;
 
-    [SerializeField]
-    private float maxDistance = 10;
-
     private void Update() {
         Transform leftmostPlayer = leftPlayer.position.x <= rightPlayer.position.x ? leftPlayer : rightPlayer;
         Transform rightmostPlayer = leftPlayer.position.x <= rightPlayer.position.x ? rightPlayer : leftPlayer;
 
         float smallCameraWidth = GetWidth(leftCamera);
 
-        SetXPosition(leftCamera.transform, Mathf.Max(leftmostPlayer.position.x, -maxDistance));
-        SetXPosition(rightCamera.transform, Mathf.Min(rightmostPlayer.position.x, maxDistance));
-        SetXPosition(middleCamera.transform, Mathf.Clamp((rightmostPlayer.position.x + leftmostPlayer.position.x) / 2, -maxDistance + smallCameraWidth / 2, maxDistance - smallCameraWidth / 2));
+        SetXPosition(leftCamera.transform, Mathf.Max(leftmostPlayer.position.x, -LevelData.LevelSizeForCamera));
+        SetXPosition(rightCamera.transform, Mathf.Min(rightmostPlayer.position.x, LevelData.LevelSizeForCamera));
+        SetXPosition(middleCamera.transform, Mathf.Clamp((rightmostPlayer.position.x + leftmostPlayer.position.x) / 2, -LevelData.LevelSizeForCamera + smallCameraWidth / 2, LevelData.LevelSizeForCamera - smallCameraWidth / 2));
 
         SetMiddleCameraMode(Mathf.Abs(rightmostPlayer.position.x - leftmostPlayer.position.x) < smallCameraWidth);//x distance between players is less than the smaller camera's width
     }
