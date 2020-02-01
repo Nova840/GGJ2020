@@ -11,9 +11,7 @@ public class QuickStart : MonoBehaviour {
     private static bool usedQuickStart = false;
 
     private void Awake() {
-        if (StartSceneLoaded.HasLoaded || usedQuickStart) {
-            Destroy(gameObject);
-        } else {
+        if (!StartSceneLoaded.HasLoaded && !usedQuickStart) {
             usedQuickStart = true;
             string currentSceneName = SceneManager.GetActiveScene().name;
             if (currentSceneName != "Game") {
@@ -23,6 +21,7 @@ public class QuickStart : MonoBehaviour {
                 SceneManager.LoadScene(defaultLevelName, LoadSceneMode.Additive);
             }
         }
+        Destroy(gameObject);
     }
 
 }
