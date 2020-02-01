@@ -40,7 +40,7 @@ public class PlayerController : MonoBehaviour {
             rb2.AddForce(movement * scale);
         }
 
-        if (shouldJump && IsGrounded()) {
+        if (shouldJump) {
             shouldJump = false;
             Vector2 jumpForce = new Vector2(0, jumpScale * 10);
             rb2.AddForce(jumpForce);
