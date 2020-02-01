@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5438377554751434829}
   - component: {fileID: 7966048014603972336}
   - component: {fileID: 4198571678439316635}
+  - component: {fileID: 790563929}
   m_Layer: 9
   m_Name: Bottom
   m_TagString: Untagged
@@ -83,6 +84,22 @@ SpriteRenderer:
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!58 &4198571678439316635
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 71493167718218995}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.1
+--- !u!58 &790563929
 CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -206,7 +223,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1776709852254850492}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.1356134, y: 2.2898216, z: -5.5940146}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5438377554751434829}
@@ -234,7 +251,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &6357481613750566590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,11 +266,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNum: 1
   scale: 20
-  maxSpeed: 5
-  jumpScale: 0
+  maxSpeed: 2
+  jumpScale: 20
   groundLayer:
     serializedVersion: 2
     m_Bits: 256
+  raycastDistance: 0.4
 --- !u!114 &-6987050008190327554
 MonoBehaviour:
   m_ObjectHideFlags: 0

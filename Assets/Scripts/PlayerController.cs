@@ -18,8 +18,18 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private LayerMask groundLayer = ~0;
 
+    [SerializeField]
+    private float raycastDistance = .5f;
+
+    private bool shouldJump = false;
+
     private void Start() {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
+    }
+
+    private void Update() {
+        if (Input.GetButtonDown("Jump" + playerNum) && IsGrounded())
+            shouldJump = true;
     }
 
     void FixedUpdate() {
@@ -30,11 +40,10 @@ public class PlayerController : MonoBehaviour {
             rb2.AddForce(movement * scale);
         }
 
-        if (Input.GetButtonDown("Jump" + playerNum)) {
-            if (IsGrounded()) {
-                Vector2 jumpForce = new Vector2(0, jumpScale * 10);
-                rb2.AddForce(jumpForce);
-            }
+        if (shouldJump && IsGrounded()) {
+            shouldJump = false;
+            Vector2 jumpForce = new Vector2(0, jumpScale * 10);
+            rb2.AddForce(jumpForce);
         }
 
     }
@@ -43,7 +52,7 @@ public class PlayerController : MonoBehaviour {
     public bool IsGrounded() {
         Vector2 position = transform.position;
         Vector2 direction = Vector2.down;
-        float distance = .5f;
+        float distance = raycastDistance;
 
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
         Debug.DrawRay(position, direction * (hit ? hit.distance : distance), hit ? Color.green : Color.red);
