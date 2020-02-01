@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
     [SerializeField]
-    private int playerNum;
+    private int playerNum = 1;
     [SerializeField]
-    private float scale;
+    private float scale = 1;
     [SerializeField]
-    private float maxSpeed;
+    private float maxSpeed = 1;
 
     [SerializeField]
-    private float jumpScale;
+    private float jumpScale = 1;
 
     private Rigidbody2D rb2;
 
     [SerializeField]
-    private LayerMask groundLayer;
+    private LayerMask groundLayer = ~0;
 
     private void Start() {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
