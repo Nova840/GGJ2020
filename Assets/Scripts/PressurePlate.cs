@@ -15,13 +15,15 @@ public class PressurePlate : MonoBehaviour {
     private UnityEvent onHold = null;
 
     private void OnTriggerEnter2D(Collider2D collision) {
-        if (collision.CompareTag("MainPlayerCollider"))
+        if (collision.CompareTag("MainPlayerCollider")) {
             onDown.Invoke();
+        }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
-        if (collision.CompareTag("MainPlayerCollider"))
+        if (collision.CompareTag("MainPlayerCollider")) {
             onUp.Invoke();
+        }
     }
 
     private void OnTriggerStay2D(Collider2D collision) {
