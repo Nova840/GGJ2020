@@ -7,20 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1343223638296900617, guid: eefec5d29fffe4503ac117d39cc3fed7,
+    - target: {fileID: -6987050008190327554, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
-      propertyPath: m_Layer
-      value: 8
+      propertyPath: spawnLeft
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1776709852254850492, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_Name
       value: P2
-      objectReference: {fileID: 0}
-    - target: {fileID: 1776709852254850492, guid: eefec5d29fffe4503ac117d39cc3fed7,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6357481613750566590, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
