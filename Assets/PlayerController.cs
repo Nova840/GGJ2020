@@ -15,10 +15,10 @@ public class PlayerController : MonoBehaviour
     private float jumpScale;
 
     private Rigidbody2D rb2;
-    private bool isOnGround = false;
+    //private bool isOnGround = false;
     //TODO Fix this later
-//    [SerializeField]
-//    private LayerMask groundLayer;
+    [SerializeField]
+    private LayerMask groundLayer;
 
 
     private void Start()
@@ -35,34 +35,34 @@ public class PlayerController : MonoBehaviour
             Vector2 movement = new Vector2(x_movement, 0);
             rb2.AddForce(movement * scale);
         }
-        if (Input.GetButtonDown("Jump" + playerNum))
+        if (IsGrounded()) {
+            if (Input.GetButtonDown("Jump" + playerNum))
         {
-            if (isOnGround)
-            {
-                isOnGround = false;
+         
+                //isOnGround = false;
                 Vector2 jumpForce = new Vector2(0, jumpScale * 10);
                 rb2.AddForce(jumpForce);
             }
         }
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (CollisionIsWithGround(collision))
-        {
-            isOnGround = true;
-            print(isOnGround);
-        }
+    //private void OnCollisionEnter2D(Collision2D collision)
+    //{
+    //    if (CollisionIsWithGround(collision))
+    //    {
+    //        isOnGround = true;
+    //        print(isOnGround);
+    //    }
 
-    }
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-        if(!CollisionIsWithGround(collision))
-        {
-            isOnGround = false;
-            print(isOnGround);
-        }
-    }
+    //}
+    //private void OnCollisionExit2D(Collision2D collision)
+    //{
+    //    if(!CollisionIsWithGround(collision))
+    //    {
+    //        isOnGround = false;
+    //        print(isOnGround);
+    //    }
+    //}
 
     private bool CollisionIsWithGround(Collision2D collision)
     {
@@ -82,23 +82,25 @@ public class PlayerController : MonoBehaviour
 
     public bool IsGrounded()
     {
-        /*Todo Fix Raycasting solution
+        //Todo Fix Raycasting solution
                         Vector2 position = transform.position;
                 Vector2 direction = Vector2.down;
-                float distance = 1.0f;
+                float distance = .5f;
 
-                Debug.DrawRay(position, direction, Color.green);
+                Debug.DrawRay(position, direction * distance, Color.green);
                 RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
+                print(hit.collider != null);
                 if (hit.collider != null)
                 {
                     return true;
+            
                 }
 
-                return false;*/
+                return false;
 
 
 
 
-        return true;
+        //return true;
     }
 }
