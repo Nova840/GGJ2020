@@ -12,8 +12,8 @@ GameObject:
   - component: {fileID: 1046014417537843726}
   - component: {fileID: 1046014417537843724}
   - component: {fileID: -601624342613609639}
-  - component: {fileID: 3721457720874271541}
-  m_Layer: 0
+  - component: {fileID: 2033065242767217748}
+  m_Layer: 8
   m_Name: Door
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -29,7 +29,7 @@ Transform:
   m_GameObject: {fileID: 1046014417537843727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -0.526, y: -0.646, z: 0}
-  m_LocalScale: {x: 0.01, y: 0.1, z: 1}
+  m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -73,7 +73,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8ebb8640654e82c4f962bab93eb7eb77, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fff9621393a0247a6aa9d5e08797fb5e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   liftedOffset: 1
-  liftSpeed: 5
+  liftSpeed: 1
 --- !u!50 &-601624342613609639
 Rigidbody2D:
   serializedVersion: 4
@@ -119,7 +119,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!61 &3721457720874271541
+--- !u!61 &2033065242767217748
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -136,12 +136,12 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 10.24, y: 10.24}
+    oldSize: {x: 5.22, y: 0.75}
     newSize: {x: 10.24, y: 10.24}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 10.24, y: 10.24}
+  m_Size: {x: 5.22, y: 0.75}
   m_EdgeRadius: 0
