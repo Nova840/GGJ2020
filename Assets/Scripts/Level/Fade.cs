@@ -8,8 +8,15 @@ public class Fade : MonoBehaviour {
     private float fadeSpeed = 1;
 
     [SerializeField]
+    private Color fadeInColor = Color.white;
+
+    [SerializeField]
+    private Color fadeOutColor = Color.white;
+
+    [SerializeField]
     private bool disableCollider = true;
 
+    private float fadeCurrentValue = 1;
     private float fadeTargetValue = 1;
 
     private SpriteRenderer spriteRenderer;
@@ -21,8 +28,8 @@ public class Fade : MonoBehaviour {
     }
 
     private void Update() {
-        Color c = spriteRenderer.color;
-        c.a = Mathf.MoveTowards(c.a, fadeTargetValue, fadeSpeed * Time.deltaTime);
+        fadeCurrentValue = Mathf.MoveTowards(fadeCurrentValue, fadeTargetValue, fadeSpeed * Time.deltaTime);
+        Color c = Color.Lerp(fadeOutColor, fadeInColor, fadeCurrentValue);
         spriteRenderer.color = c;
         if (disableCollider) {
             if (c.a <= 0 && collider2d.enabled)
