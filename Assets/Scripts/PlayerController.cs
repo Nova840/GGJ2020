@@ -23,12 +23,18 @@ public class PlayerController : MonoBehaviour {
 
     private bool shouldJump = false;
 
+
+    private Animator ani;
+
+
+
     private void Start() {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
+        ani = this.gameObject.GetComponent<Animator>(); 
     }
 
     private void Update() {
-        if (Input.GetButtonDown("Jump" + playerNum) && IsGrounded())
+        if (IsGrounded() && Input.GetButtonDown("Jump" + playerNum))
             shouldJump = true;
     }
 
@@ -38,6 +44,9 @@ public class PlayerController : MonoBehaviour {
         if (rb2.velocity.magnitude < maxSpeed) {
             Vector2 movement = new Vector2(x_movement, 0);
             rb2.AddForce(movement * scale);
+            ani.SetBool("Left", x_movement > 0);
+
+            ani.SetBool("moving", x_movement != 0);
         }
 
         if (shouldJump) {
@@ -57,8 +66,10 @@ public class PlayerController : MonoBehaviour {
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
         Debug.DrawRay(position, direction * (hit ? hit.distance : distance), hit ? Color.green : Color.red);
         if (hit.collider != null) {
+            ani.SetBool("jumping", false);
             return true;
         }
+        ani.SetBool("jumping", true);
         return false;
     }
 }
