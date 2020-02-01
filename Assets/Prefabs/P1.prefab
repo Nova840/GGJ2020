@@ -190,7 +190,7 @@ GameObject:
   - component: {fileID: 7120711235081590833}
   - component: {fileID: 8825896187699570828}
   - component: {fileID: 6357481613750566590}
-  m_Layer: 8
+  m_Layer: 0
   m_Name: P1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -252,4 +252,4 @@ MonoBehaviour:
   jumpScale: 0
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 0

@@ -668,10 +668,20 @@ PrefabInstance:
       propertyPath: maxSpeed
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6955536215467364222, guid: efb16ec5fa4da407e83b683bcb14407c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7677289003628000971, guid: efb16ec5fa4da407e83b683bcb14407c,
         type: 3}
       propertyPath: m_Name
       value: P2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8277316180467910532, guid: efb16ec5fa4da407e83b683bcb14407c,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8755520634245198920, guid: efb16ec5fa4da407e83b683bcb14407c,
         type: 3}
@@ -973,6 +983,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 71493167718218995, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1343223638296900617, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1776709852254850492, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_Name
