@@ -23,4 +23,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Levels/Tutorial.unity
     guid: a95a19d6198224c598269acc8ecc1d7c
+  - enabled: 1
+    path: Assets/Scenes/Axel Test.unity
+    guid: 7800243e8a6a146ffbc97d9e28400096
   m_configObjects: {}
