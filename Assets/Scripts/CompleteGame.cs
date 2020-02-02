@@ -11,11 +11,14 @@ public class CompleteGame : MonoBehaviour {
     [SerializeField]
     private float returnDelay = 5;
 
-    private static bool alreadyCompleted = false;
+    [SerializeField]
+    private float volume = 1;
+
+    public static bool AlreadyCompleted { get; private set; } = false;
 
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (!alreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
-            alreadyCompleted = true;
+        if (!AlreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
+            AlreadyCompleted = true;
             winCanvas.SetActive(true);
             StartCoroutine(ReturnToStart());
         }
@@ -27,7 +30,7 @@ public class CompleteGame : MonoBehaviour {
     }
 
     private void OnDestroy() {
-        alreadyCompleted = false;
+        AlreadyCompleted = false;
     }
 
 }
