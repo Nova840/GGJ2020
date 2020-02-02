@@ -131,6 +131,7 @@ GameObject:
   m_Component:
   - component: {fileID: 129584143}
   - component: {fileID: 129584142}
+  - component: {fileID: 129584141}
   m_Layer: 0
   m_Name: Right Camera
   m_TagString: Untagged
@@ -138,6 +139,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &129584141
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 129584140}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb7d9894e031c54b8bf08a1ba8ae2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &129584142
 Camera:
   m_ObjectHideFlags: 0
@@ -274,6 +287,7 @@ GameObject:
   m_Component:
   - component: {fileID: 683846822}
   - component: {fileID: 683846821}
+  - component: {fileID: 683846820}
   m_Layer: 0
   m_Name: Left Camera
   m_TagString: Untagged
@@ -281,6 +295,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &683846820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683846819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb7d9894e031c54b8bf08a1ba8ae2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &683846821
 Camera:
   m_ObjectHideFlags: 0
@@ -348,6 +374,7 @@ GameObject:
   m_Component:
   - component: {fileID: 702396451}
   - component: {fileID: 702396450}
+  - component: {fileID: 702396449}
   m_Layer: 0
   m_Name: Middle Camera
   m_TagString: Untagged
@@ -355,6 +382,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &702396449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 702396448}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7fb7d9894e031c54b8bf08a1ba8ae2b8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!20 &702396450
 Camera:
   m_ObjectHideFlags: 0

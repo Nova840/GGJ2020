@@ -16,6 +16,10 @@ public class LevelData : MonoBehaviour {
     private float levelSizeForCamera = 10;
     public static float LevelSizeForCamera { get { return instance.levelSizeForCamera; } }
 
+    [SerializeField]
+    private float cameraSize = 5;
+    public static float CameraSize { get { return instance.cameraSize; } }
+
     private static LevelData instance;
 
     private void Awake() {
