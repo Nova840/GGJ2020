@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour {
     private LayerMask groundLayer = ~0;
 
     [SerializeField]
-    private float raycastDistance = .5f;
+    public float raycastDistance = .5f;
 
     [SerializeField]
     private AudioClip jumpingSound = null;
