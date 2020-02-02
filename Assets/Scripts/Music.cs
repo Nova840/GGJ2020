@@ -36,10 +36,16 @@ public class Music : MonoBehaviour {
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName != "Game")
             GameMusicStage = 0;
-        menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, sceneName == "Start" ? 1 : 0, fadeSpeed * Time.deltaTime);
+        menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, sceneName == "Start" && gameMusic[0].volume == 0 ? 1 : 0, fadeSpeed * Time.deltaTime);
+
         for (int i = 0; i < gameMusic.Length; i++) {
-            gameMusic[i].volume = Mathf.MoveTowards(gameMusic[i].volume, sceneName == "Game" && i <= GameMusicStage ? 1 : 0, fadeSpeed * Time.deltaTime);
+            gameMusic[i].volume = Mathf.MoveTowards(gameMusic[i].volume, sceneName == "Game" && i <= GameMusicStage && menuMusic.volume == 0 ? 1 : 0, fadeSpeed * Time.deltaTime);
         }
+        if (menuMusic.volume == 0)
+            menuMusic.time = 0;
+        if (gameMusic[0].volume == 0)
+            foreach (AudioSource source in gameMusic)
+                source.time = 0;
     }
 
 }
