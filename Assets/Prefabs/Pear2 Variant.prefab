@@ -81,7 +81,7 @@ PrefabInstance:
         type: 3}
       propertyPath: jumpingSound
       value: 
-      objectReference: {fileID: 8300000, guid: c488b052e534c4243bb1b774a23696ad, type: 3}
+      objectReference: {fileID: 8300000, guid: bbbb47810b0eda14d98983884861a65f, type: 3}
     - target: {fileID: 6101583729509707883, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}
       propertyPath: m_Sprite
