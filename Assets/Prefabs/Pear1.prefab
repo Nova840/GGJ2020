@@ -71,7 +71,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
   volume: 1
 --- !u!1 &6101583729306348273
 GameObject:
@@ -323,7 +323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
   volume: 1
 --- !u!95 &8694905559385036856
 Animator:
@@ -577,5 +577,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
   volume: 1
