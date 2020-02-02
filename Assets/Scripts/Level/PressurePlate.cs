@@ -20,17 +20,20 @@ public class PressurePlate : MonoBehaviour {
     [SerializeField]
     private AudioClip releasedSound = null;
 
+    [SerializeField, Range(0, 1)]
+    private float volume = 1;
+
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("MainPlayerCollider")) {
             onDown.Invoke();
-            AudioSource.PlayClipAtPoint(pressedSound, Vector3.zero);
+            Sound.PlaySound(pressedSound, volume);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision) {
         if (collision.CompareTag("MainPlayerCollider")) {
             onUp.Invoke();
-            AudioSource.PlayClipAtPoint(releasedSound, Vector3.zero);
+            Sound.PlaySound(releasedSound, volume);
         }
     }
 

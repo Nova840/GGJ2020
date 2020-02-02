@@ -39,6 +39,9 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float maxXVelocityForSound = 1.5f;
 
+    [SerializeField, Range(0, 1)]
+    private float volume = 1;
+
     private bool shouldJump = false;
 
     private SpriteRenderer feet;
@@ -73,7 +76,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (shouldJump) {
-            AudioSource.PlayClipAtPoint(jumpingSound, Vector3.zero);
+            Sound.PlaySound( jumpingSound, volume);
             shouldJump = false;
             Vector2 jumpForce = new Vector2(0, jumpScale * 10);
             rb2.AddForce(jumpForce);
@@ -92,7 +95,7 @@ public class PlayerController : MonoBehaviour {
         ani.SetBool("jumping", !grounded);
         wasGrounded = grounded;
         if (!wasGrounded && grounded)
-            AudioSource.PlayClipAtPoint(landingSound, Vector3.zero);
+            Sound.PlaySound(landingSound, volume);
         return grounded;
     }
 

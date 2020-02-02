@@ -1863,6 +1863,7 @@ MonoBehaviour:
   - {fileID: 372051580}
   - {fileID: 1052726198}
   - {fileID: 1363347321}
+  masterMusicVolume: 0.5
   fadeSpeed: 1
 --- !u!1 &1950529999
 GameObject:

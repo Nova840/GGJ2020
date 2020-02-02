@@ -20,6 +20,9 @@ public class Lift : MonoBehaviour {
     [SerializeField]
     private AudioClip elevatorDown = null;
 
+    [SerializeField, Range(0, 1)]
+    private float volume = 1;
+
     private void Awake() {
         originalPosition = transform.position;
     }
@@ -32,7 +35,7 @@ public class Lift : MonoBehaviour {
 
     public void SetLifted(bool lifted) {
         this.lifted = lifted;
-        AudioSource.PlayClipAtPoint(lifted ? elevatorUp : elevatorDown, Vector3.zero);
+        Sound.PlaySound(lifted ? elevatorUp : elevatorDown, volume);
     }
 
 }
