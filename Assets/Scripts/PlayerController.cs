@@ -6,12 +6,12 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private int playerNum = 1;
     [SerializeField]
-    private float scale = 1;
+    private float moveScale = 40;
     [SerializeField]
-    private float maxSpeed = 1;
+    private float maxSpeed = 10;
 
     [SerializeField]
-    private float jumpScale = 1;
+    private float jumpScale = 100;
 
     private Rigidbody2D rb2;
 
@@ -41,6 +41,8 @@ public class PlayerController : MonoBehaviour {
 
     private bool shouldJump = false;
 
+    private SpriteRenderer feet;
+
     private Animator ani;
 
     private bool wasGrounded = true;
@@ -48,6 +50,8 @@ public class PlayerController : MonoBehaviour {
     private void Start() {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
         ani = this.gameObject.GetComponent<Animator>();
+        feet = this.gameObject.transform.Find("Shoes-Standing").gameObject.GetComponent<SpriteRenderer>();
+        
     }
 
     private void Update() {
@@ -63,10 +67,10 @@ public class PlayerController : MonoBehaviour {
 
         if (rb2.velocity.magnitude < maxSpeed) {
             Vector2 movement = new Vector2(x_movement, 0);
-            rb2.AddForce(movement * scale);
-            ani.SetBool("Left", x_movement > 0);
+            rb2.AddForce(movement * moveScale);
+            feet.flipX  = x_movement < 0;
 
-            ani.SetBool("moving", x_movement != 0);
+            ani.SetFloat("speed", rb2.velocity.magnitude);
         }
 
         if (shouldJump) {
