@@ -37,6 +37,7 @@ public class Music : MonoBehaviour {
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName != "Game")
             GameMusicStage = 0;
+        GameMusicStage = Mathf.Clamp(GameMusicStage, 0, gameMusic.Length);
         menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, sceneName == "Start" && gameMusic[0].volume == 0 ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
 
         for (int i = 0; i < gameMusic.Length; i++) {
