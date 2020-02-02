@@ -130,3 +130,5 @@ MonoBehaviour:
   onHold:
     m_PersistentCalls:
       m_Calls: []
+  pressedSound: {fileID: 8300000, guid: b56a96f7f747c1b4f80776ea91afc64d, type: 3}
+  releasedSound: {fileID: 8300000, guid: 7df3db90ffddf2249954951576fcc657, type: 3}

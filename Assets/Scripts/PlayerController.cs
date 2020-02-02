@@ -21,21 +21,41 @@ public class PlayerController : MonoBehaviour {
     [SerializeField]
     private float raycastDistance = .5f;
 
-    private bool shouldJump = false;
+    [SerializeField]
+    private AudioClip jumpingSound = null;
 
+    [SerializeField]
+    private AudioClip landingSound = null;
+
+    [SerializeField]
+    private AudioSource footstepsSource = null;
+
+    [SerializeField]
+    private float footstepInterval = .5f;
+
+    [SerializeField]
+    private float minXVelocityForSound = .5f;
+
+    [SerializeField]
+    private float maxXVelocityForSound = 1.5f;
+
+    private bool shouldJump = false;
 
     private Animator ani;
 
-
+    private bool wasGrounded = true;
 
     private void Start() {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
-        ani = this.gameObject.GetComponent<Animator>(); 
+        ani = this.gameObject.GetComponent<Animator>();
     }
 
     private void Update() {
-        if (IsGrounded() && Input.GetButtonDown("Jump" + playerNum))
+        bool grounded = IsGrounded();
+        if (grounded && Input.GetButtonDown("Jump" + playerNum))
             shouldJump = true;
+        if (grounded)
+            footstepsSource.volume = Mathf.InverseLerp(minXVelocityForSound, maxXVelocityForSound, Mathf.Abs(rb2.velocity.x));
     }
 
     void FixedUpdate() {
@@ -50,13 +70,13 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (shouldJump) {
+            AudioSource.PlayClipAtPoint(jumpingSound, Vector3.zero);
             shouldJump = false;
             Vector2 jumpForce = new Vector2(0, jumpScale * 10);
             rb2.AddForce(jumpForce);
         }
 
     }
-
 
     public bool IsGrounded() {
         Vector2 position = transform.position;
@@ -65,11 +85,12 @@ public class PlayerController : MonoBehaviour {
 
         RaycastHit2D hit = Physics2D.Raycast(position, direction, distance, groundLayer);
         Debug.DrawRay(position, direction * (hit ? hit.distance : distance), hit ? Color.green : Color.red);
-        if (hit.collider != null) {
-            ani.SetBool("jumping", false);
-            return true;
-        }
-        ani.SetBool("jumping", true);
-        return false;
+        bool grounded = hit.collider != null;
+        ani.SetBool("jumping", !grounded);
+        wasGrounded = grounded;
+        if (!wasGrounded && grounded)
+            AudioSource.PlayClipAtPoint(landingSound, Vector3.zero);
+        return grounded;
     }
+
 }

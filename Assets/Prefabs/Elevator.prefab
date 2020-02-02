@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: -601624342613609639}
   - component: {fileID: 2033065242767217748}
   m_Layer: 8
-  m_Name: Door
+  m_Name: Elevator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,6 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   liftedOffset: 1
   liftSpeed: 1
+  elevatorUp: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
+  elevatorDown: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
 --- !u!50 &-601624342613609639
 Rigidbody2D:
   serializedVersion: 4

@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: spawnLeft
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -6671403610955545436, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c488b052e534c4243bb1b774a23696ad, type: 3}
     - target: {fileID: 838454850631864127, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_Color.g
@@ -32,6 +37,16 @@ PrefabInstance:
       propertyPath: playerNum
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6357481613750566590, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: jumpingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: bbbb47810b0eda14d98983884861a65f, type: 3}
+    - target: {fileID: 6357481613750566590, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: footstepSound
+      value: 
+      objectReference: {fileID: 8300000, guid: c488b052e534c4243bb1b774a23696ad, type: 3}
     - target: {fileID: 7120711235081590833, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -85,6 +100,11 @@ PrefabInstance:
     - target: {fileID: 7120711235081590833, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7540991570149950616, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: isLeftPlayer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7966048014603972336, guid: eefec5d29fffe4503ac117d39cc3fed7,
