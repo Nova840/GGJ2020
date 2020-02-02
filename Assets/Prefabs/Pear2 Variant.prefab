@@ -7,10 +7,15 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -7311688348179683285, guid: aa16dd7af61a0469dbc78cb921134247,
+        type: 3}
+      propertyPath: spawnLeft
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6101583729306348273, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}
       propertyPath: m_Name
-      value: Pear2
+      value: Pear2 Variant
       objectReference: {fileID: 0}
     - target: {fileID: 6101583729306348275, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}

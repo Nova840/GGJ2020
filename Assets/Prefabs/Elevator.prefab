@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 1046014417537843724}
   - component: {fileID: -601624342613609639}
   - component: {fileID: 2033065242767217748}
+  - component: {fileID: 4001266012184081810}
   m_Layer: 8
   m_Name: Elevator
   m_TagString: Untagged
@@ -100,6 +101,7 @@ MonoBehaviour:
   liftSpeed: 1
   elevatorUp: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
   elevatorDown: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
+  volume: 1
 --- !u!50 &-601624342613609639
 Rigidbody2D:
   serializedVersion: 4
@@ -147,3 +149,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.22, y: 0.75}
   m_EdgeRadius: 0
+--- !u!114 &4001266012184081810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046014417537843727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 34f3ec033ff154ab2bb71ae827a8a096, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BGSteps:
+  - {fileID: 21300000, guid: fff9621393a0247a6aa9d5e08797fb5e, type: 3}
+  - {fileID: 21300000, guid: 3bd7061a0f63842b79a60e79c6aef919, type: 3}
+  isPermanent: 0

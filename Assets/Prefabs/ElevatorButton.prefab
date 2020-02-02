@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5353078945842922060}
   - component: {fileID: 5754275806057281833}
   - component: {fileID: 3044633839038121022}
+  - component: {fileID: -3363994628362922925}
   m_Layer: 0
   m_Name: ElevatorButton
   m_TagString: Untagged
@@ -125,3 +126,27 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.3, y: 4.07}
   m_EdgeRadius: 0
+--- !u!114 &-3363994628362922925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3425919441968172771}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f636f655db615145b733927200370ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onDown:
+    m_PersistentCalls:
+      m_Calls: []
+  onUp:
+    m_PersistentCalls:
+      m_Calls: []
+  onHold:
+    m_PersistentCalls:
+      m_Calls: []
+  pressedSound: {fileID: 8300000, guid: b56a96f7f747c1b4f80776ea91afc64d, type: 3}
+  releasedSound: {fileID: 8300000, guid: 7df3db90ffddf2249954951576fcc657, type: 3}
+  volume: 1

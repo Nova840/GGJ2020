@@ -725,7 +725,7 @@ RectTransform:
   m_Children:
   - {fileID: 844177840}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -801,6 +801,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa16dd7af61a0469dbc78cb921134247, type: 3}
+--- !u!4 &1239772637 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6101583729306348275, guid: aa16dd7af61a0469dbc78cb921134247,
+    type: 3}
+  m_PrefabInstance: {fileID: 1239772636}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1351412818
 GameObject:
   m_ObjectHideFlags: 0
@@ -844,8 +850,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf8f4649c72c8a84791814a3cf1c4204, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftPlayer: {fileID: 0}
-  rightPlayer: {fileID: 0}
+  leftPlayer: {fileID: 1239772637}
+  rightPlayer: {fileID: 1556185214}
   leftCamera: {fileID: 683846821}
   rightCamera: {fileID: 129584142}
   middleCamera: {fileID: 702396450}
@@ -919,6 +925,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36b33e94f70ad4672a8ac6d98294977d, type: 3}
+--- !u!4 &1556185214 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6242247502259690254, guid: 36b33e94f70ad4672a8ac6d98294977d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1556185213}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1695535748
 GameObject:
   m_ObjectHideFlags: 0
