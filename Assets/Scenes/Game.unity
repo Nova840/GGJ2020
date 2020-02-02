@@ -905,6 +905,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4788412397583751461, guid: efb16ec5fa4da407e83b683bcb14407c,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
+    - target: {fileID: 5100454567402322533, guid: efb16ec5fa4da407e83b683bcb14407c,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
     - target: {fileID: 7677289003628000971, guid: efb16ec5fa4da407e83b683bcb14407c,
         type: 3}
       propertyPath: m_Name
@@ -1178,6 +1188,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: P1
       objectReference: {fileID: 0}
+    - target: {fileID: 3481504797383352914, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
+    - target: {fileID: 3813253632252215570, guid: eefec5d29fffe4503ac117d39cc3fed7,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
     - target: {fileID: 7120711235081590833, guid: eefec5d29fffe4503ac117d39cc3fed7,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1254,3 +1274,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 926364734}
+  returnDelay: 5

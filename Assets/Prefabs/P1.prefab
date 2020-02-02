@@ -280,6 +280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9174445931873755906}
   - component: {fileID: 20683131782058812}
+  - component: {fileID: 3481504797383352914}
   m_Layer: 9
   m_Name: Left Frictionless Collider
   m_TagString: Untagged
@@ -327,6 +328,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3481504797383352914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7771332858226395756}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d109ac138804eb499f9a2fc59301fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winCanvas: {fileID: 0}
+  returnDelay: 5
 --- !u!1 &8016020513516385484
 GameObject:
   m_ObjectHideFlags: 0
@@ -337,6 +352,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5169156138057218023}
   - component: {fileID: 6866802772812038796}
+  - component: {fileID: 3813253632252215570}
   m_Layer: 9
   m_Name: Right Frictionless Collider
   m_TagString: Untagged
@@ -384,3 +400,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3813253632252215570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8016020513516385484}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d109ac138804eb499f9a2fc59301fa7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  winCanvas: {fileID: 0}
+  returnDelay: 5

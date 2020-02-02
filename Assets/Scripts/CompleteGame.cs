@@ -11,8 +11,11 @@ public class CompleteGame : MonoBehaviour {
     [SerializeField]
     private float returnDelay = 5;
 
+    private static bool alreadyCompleted = false;
+
     private void OnCollisionEnter2D(Collision2D collision) {
-        if (collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
+        if (!alreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
+            alreadyCompleted = true;
             winCanvas.SetActive(true);
             StartCoroutine(ReturnToStart());
         }
@@ -21,6 +24,10 @@ public class CompleteGame : MonoBehaviour {
     private IEnumerator ReturnToStart() {
         yield return new WaitForSeconds(returnDelay);
         SceneManager.LoadScene("Start");
+    }
+
+    private void OnDestroy() {
+        alreadyCompleted = false;
     }
 
 }
