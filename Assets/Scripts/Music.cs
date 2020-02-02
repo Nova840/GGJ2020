@@ -34,11 +34,6 @@ public class Music : MonoBehaviour {
     }
 
     private void Update() {
-        if (Input.GetKeyDown(KeyCode.UpArrow))
-            GameMusicStage++;
-        if (Input.GetKeyDown(KeyCode.DownArrow))
-            GameMusicStage--;
-        GameMusicStage = Mathf.Clamp(GameMusicStage, 0, gameMusic.Length - 1);
         string sceneName = SceneManager.GetActiveScene().name;
         if (sceneName != "Game")
             GameMusicStage = 0;
