@@ -72,6 +72,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
   returnDelay: 5
+  volume: 1
 --- !u!1 &6101583729306348273
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,6 +89,7 @@ GameObject:
   - component: {fileID: -7311688348179683285}
   - component: {fileID: 6320084496860272270}
   - component: {fileID: -8247639348313879834}
+  - component: {fileID: 8694905559385036856}
   m_Layer: 0
   m_Name: Pear1
   m_TagString: Untagged
@@ -164,6 +166,7 @@ MonoBehaviour:
   footstepsSource: {fileID: 0}
   minXVelocityForSound: 0.5
   maxXVelocityForSound: 1.5
+  volume: 1
 --- !u!50 &6101583729306348276
 Rigidbody2D:
   serializedVersion: 4
@@ -321,6 +324,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
   returnDelay: 5
+  volume: 1
+--- !u!95 &8694905559385036856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101583729306348273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b957a6555e6f54deeb47cec1d1578531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6101583729509707881
 GameObject:
   m_ObjectHideFlags: 0
@@ -555,3 +578,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
   returnDelay: 5
+  volume: 1
