@@ -739,6 +739,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8247639348313879834, guid: aa16dd7af61a0469dbc78cb921134247,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
+    - target: {fileID: 5055196215923805273, guid: aa16dd7af61a0469dbc78cb921134247,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
     - target: {fileID: 6101583729306348273, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}
       propertyPath: m_Name
@@ -757,7 +767,7 @@ PrefabInstance:
     - target: {fileID: 6101583729306348275, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6101583729306348275, guid: aa16dd7af61a0469dbc78cb921134247,
         type: 3}
@@ -799,6 +809,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6214709742663928603, guid: aa16dd7af61a0469dbc78cb921134247,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: aa16dd7af61a0469dbc78cb921134247, type: 3}
 --- !u!4 &1239772637 stripped
@@ -863,6 +878,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1119068233696951067, guid: 36b33e94f70ad4672a8ac6d98294977d,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
+    - target: {fileID: 4911860630124772772, guid: 36b33e94f70ad4672a8ac6d98294977d,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
+    - target: {fileID: 6067140901790890726, guid: 36b33e94f70ad4672a8ac6d98294977d,
+        type: 3}
+      propertyPath: winCanvas
+      value: 
+      objectReference: {fileID: 926364734}
     - target: {fileID: 6242247502259690252, guid: 36b33e94f70ad4672a8ac6d98294977d,
         type: 3}
       propertyPath: m_Name
@@ -881,7 +911,7 @@ PrefabInstance:
     - target: {fileID: 6242247502259690254, guid: 36b33e94f70ad4672a8ac6d98294977d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 1
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 6242247502259690254, guid: 36b33e94f70ad4672a8ac6d98294977d,
         type: 3}
@@ -906,7 +936,7 @@ PrefabInstance:
     - target: {fileID: 6242247502259690254, guid: 36b33e94f70ad4672a8ac6d98294977d,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6242247502259690254, guid: 36b33e94f70ad4672a8ac6d98294977d,
         type: 3}

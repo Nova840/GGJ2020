@@ -71,7 +71,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
+  volume: 1
 --- !u!1 &6101583729306348273
 GameObject:
   m_ObjectHideFlags: 0
@@ -88,7 +89,8 @@ GameObject:
   - component: {fileID: -7311688348179683285}
   - component: {fileID: 6320084496860272270}
   - component: {fileID: -8247639348313879834}
-  m_Layer: 0
+  - component: {fileID: 8694905559385036856}
+  m_Layer: 9
   m_Name: Pear1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -157,13 +159,14 @@ MonoBehaviour:
   jumpScale: 100
   groundLayer:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 311
   raycastDistance: 0.5
-  jumpingSound: {fileID: 0}
-  landingSound: {fileID: 0}
-  footstepsSource: {fileID: 0}
+  jumpingSound: {fileID: 8300000, guid: f4b5a683c63b8834c8c49dbbf2138a68, type: 3}
+  landingSound: {fileID: 8300000, guid: 53c330ad32acb714a9d02852731d0a15, type: 3}
+  footstepsSource: {fileID: -1341404048279990407}
   minXVelocityForSound: 0.5
   maxXVelocityForSound: 1.5
+  volume: 1
 --- !u!50 &6101583729306348276
 Rigidbody2D:
   serializedVersion: 4
@@ -320,7 +323,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
+  volume: 1
+--- !u!95 &8694905559385036856
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6101583729306348273}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b957a6555e6f54deeb47cec1d1578531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &6101583729509707881
 GameObject:
   m_ObjectHideFlags: 0
@@ -331,7 +354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6101583729509707882}
   - component: {fileID: 6101583729509707883}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: SadPear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -412,7 +435,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6101583729997125531}
   - component: {fileID: 6101583729997125532}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Shoes-Standing
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -554,4 +577,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
-  returnDelay: 5
+  returnDelay: 15
+  volume: 1

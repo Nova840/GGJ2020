@@ -54,8 +54,10 @@ public class Music : MonoBehaviour {
         if (gameMusic[0].volume == 0)
             foreach (AudioSource source in gameMusic)
                 source.time = 0;
-        if (winMusic.volume == 0)
+        if (winMusic.volume == 0) {
             winMusic.time = 0;
+            winMusic.Play();
+        }
     }
 
 }
