@@ -161,9 +161,9 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   raycastDistance: 0.5
-  jumpingSound: {fileID: 0}
-  landingSound: {fileID: 0}
-  footstepsSource: {fileID: 0}
+  jumpingSound: {fileID: 8300000, guid: f4b5a683c63b8834c8c49dbbf2138a68, type: 3}
+  landingSound: {fileID: 8300000, guid: 53c330ad32acb714a9d02852731d0a15, type: 3}
+  footstepsSource: {fileID: -1341404048279990407}
   minXVelocityForSound: 0.5
   maxXVelocityForSound: 1.5
   volume: 1
