@@ -3,10 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour {
+
     [SerializeField]
     private int playerNum = 1;
+
     [SerializeField]
     private float moveScale = 40;
+
     [SerializeField]
     private float maxSpeed = 10;
 
@@ -31,9 +34,6 @@ public class PlayerController : MonoBehaviour {
     private AudioSource footstepsSource = null;
 
     [SerializeField]
-    private float footstepInterval = .5f;
-
-    [SerializeField]
     private float minXVelocityForSound = .5f;
 
     [SerializeField]
@@ -51,7 +51,6 @@ public class PlayerController : MonoBehaviour {
         rb2 = this.gameObject.GetComponent<Rigidbody2D>();
         ani = this.gameObject.GetComponent<Animator>();
         feet = this.gameObject.transform.Find("Shoes-Standing").gameObject.GetComponent<SpriteRenderer>();
-        
     }
 
     private void Update() {
@@ -68,7 +67,7 @@ public class PlayerController : MonoBehaviour {
         if (rb2.velocity.magnitude < maxSpeed) {
             Vector2 movement = new Vector2(x_movement, 0);
             rb2.AddForce(movement * moveScale);
-            feet.flipX  = x_movement < 0;
+            feet.flipX = x_movement < 0;
 
             ani.SetFloat("speed", rb2.velocity.magnitude);
         }
