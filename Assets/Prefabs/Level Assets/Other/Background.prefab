@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7215357556864417810}
   - component: {fileID: 7215357556864417809}
   m_Layer: 0
-  m_Name: RePear BG 0
+  m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -26,8 +26,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7215357556864417808}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.89, y: 2.18, z: 0}
-  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -94,10 +94,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f3ec033ff154ab2bb71ae827a8a096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGSteps:
+  sprites:
   - {fileID: 21300000, guid: 1604dd8c7413745c294f48a0cc054735, type: 3}
   - {fileID: 21300000, guid: 1586c4c4b8d7d4303a6e071e6bfbc584, type: 3}
   - {fileID: 21300000, guid: 079c9bd05568e401e93aaf973fd08230, type: 3}
   - {fileID: 21300000, guid: 2eee5bb534d7d4aa2b1fc3739b646dcc, type: 3}
   - {fileID: 21300000, guid: 546f5694ff09b4364a5b0a75df39b48e, type: 3}
   - {fileID: 21300000, guid: a0c1130d649344521a6af1afe4dcb88e, type: 3}
+  isBackground: 1

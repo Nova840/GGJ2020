@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1046014417537843725}
-  - component: {fileID: 1046014417537843726}
   - component: {fileID: 1046014417537843724}
+  - component: {fileID: 1046014417537843726}
   - component: {fileID: -601624342613609639}
   - component: {fileID: 2033065242767217748}
   - component: {fileID: 4001266012184081810}
@@ -29,12 +29,30 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1046014417537843727}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.526, y: -0.646, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.25, y: 0.25, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1046014417537843724
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1046014417537843727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb56b7d539c807f47a673266882aea34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonNumber: 0
+  liftedOffset: 1
+  liftSpeed: 1
+  elevatorUp: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
+  elevatorDown: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
+  volume: 1
 --- !u!212 &1046014417537843726
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -85,23 +103,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1046014417537843724
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1046014417537843727}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb56b7d539c807f47a673266882aea34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  liftedOffset: 1
-  liftSpeed: 1
-  elevatorUp: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
-  elevatorDown: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
-  volume: 1
 --- !u!50 &-601624342613609639
 Rigidbody2D:
   serializedVersion: 4
@@ -161,7 +162,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34f3ec033ff154ab2bb71ae827a8a096, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BGSteps:
-  - {fileID: 21300000, guid: fff9621393a0247a6aa9d5e08797fb5e, type: 3}
-  - {fileID: 21300000, guid: 3bd7061a0f63842b79a60e79c6aef919, type: 3}
+  sprites: []
   isPermanent: 0

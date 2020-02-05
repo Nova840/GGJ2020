@@ -6,13 +6,15 @@ using UnityEngine.Events;
 public class Trigger : MonoBehaviour {
 
     [SerializeField]
+    private int buttonNumber = 0;
+
+    private static List<Trigger> allTriggers = new List<Trigger>();
+
+    [SerializeField]
     private UnityEvent onDown = null;
 
     [SerializeField]
     private UnityEvent onUp = null;
-
-    [SerializeField]
-    private UnityEvent onHold = null;
 
     [SerializeField]
     private AudioClip pressedSound = null;
@@ -22,6 +24,24 @@ public class Trigger : MonoBehaviour {
 
     [SerializeField, Range(0, 1)]
     private float volume = 1;
+
+    private void Awake() {
+        allTriggers.Add(this);
+    }
+
+    private void OnDestroy() {
+        allTriggers.Remove(this);
+    }
+
+    public static void AddToTriggerDown(int buttonNumber, UnityAction action) {
+        Trigger trigger = allTriggers.Find(t => t.buttonNumber == buttonNumber);
+        trigger.onDown.AddListener(action);
+    }
+
+    public static void AddToTriggerUp(int buttonNumber, UnityAction action) {
+        Trigger trigger = allTriggers.Find(t => t.buttonNumber == buttonNumber);
+        trigger.onUp.AddListener(action);
+    }
 
     private void OnTriggerEnter2D(Collider2D collision) {
         if (collision.CompareTag("MainPlayerCollider")) {
@@ -35,11 +55,6 @@ public class Trigger : MonoBehaviour {
             onUp.Invoke();
             Sound.PlaySound(releasedSound, volume);
         }
-    }
-
-    private void OnTriggerStay2D(Collider2D collision) {
-        if (collision.CompareTag("MainPlayerCollider"))
-            onHold.Invoke();
     }
 
 }

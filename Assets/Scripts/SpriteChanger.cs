@@ -2,39 +2,29 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SpriteChanger : MonoBehaviour
-{
-    [SerializeField]
-    private Sprite[] BGSteps = null;
-    [SerializeField]
-    private bool isPermanent = false;
+public class SpriteChanger : MonoBehaviour {
 
-    private bool[] triggered;
+    [SerializeField]
+    private Sprite[] sprites = null;
 
-    private SpriteRenderer sr;
-    // Start is called before the first frame update
-    void Start()
-    {
-        triggered = new bool[BGSteps.Length];
-        sr = gameObject.GetComponent<SpriteRenderer>();
-        for (int i = 0; i < triggered.Length; i++)
-        {
-            triggered[i] = false;
-        }
+    [SerializeField]
+    private bool isBackground = false;
+
+    private SpriteRenderer spriteRenderer;
+
+    public int CurrentSpriteIndex { get; private set; } = 0;
+
+    public static SpriteChanger Background { get; private set; }
+
+    private void Awake() {
+        spriteRenderer = gameObject.GetComponent<SpriteRenderer>();
+        if (isBackground)
+            Background = this;
     }
 
-    public void StepUp(int step)
-    {
-        if (isPermanent && triggered[step] == false)
-        {
-            sr.sprite = BGSteps[step];
-            triggered[step] = true;
-        }else if (isPermanent == false)
-        {
-            sr.sprite = BGSteps[step];
-
-        }
+    public void SetSprite(int index) {
+        CurrentSpriteIndex = Mathf.Clamp(index, 0, sprites.Length - 1);
+        spriteRenderer.sprite = sprites[CurrentSpriteIndex];
     }
-
 
 }

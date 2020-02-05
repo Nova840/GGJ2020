@@ -35,9 +35,9 @@ public class Music : MonoBehaviour {
 
     private void Update() {
         bool isOnGame = SceneManager.GetActiveScene().name == "Game";
-        if (isOnGame)
+        if (!isOnGame)
             GameMusicStage = 0;
-        GameMusicStage = Mathf.Clamp(GameMusicStage, 0, gameMusic.Length);
+        GameMusicStage = Mathf.Clamp(GameMusicStage, 0, gameMusic.Length - 1);
         menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, !isOnGame && gameMusic[0].volume == 0 ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
 
         for (int i = 0; i < gameMusic.Length; i++) {

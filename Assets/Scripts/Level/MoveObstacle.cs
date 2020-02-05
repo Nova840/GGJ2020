@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
-public class Lift : MonoBehaviour {
+public class MoveObstacle : MonoBehaviour {
 
     private bool lifted = false;
 
     private Vector3 originalPosition;
+
+    [SerializeField]
+    private int buttonNumber = 0;
 
     [SerializeField]
     private float liftedOffset = 1;
@@ -25,6 +29,8 @@ public class Lift : MonoBehaviour {
 
     private void Awake() {
         originalPosition = transform.position;
+        Trigger.AddToTriggerDown(buttonNumber, new UnityAction(SetUp));
+        Trigger.AddToTriggerUp(buttonNumber, new UnityAction(SetDown));
     }
 
     private void Update() {
@@ -32,10 +38,14 @@ public class Lift : MonoBehaviour {
         transform.position = Vector3.MoveTowards(transform.position, originalPosition + offset, liftSpeed * Time.deltaTime);
     }
 
+    public void SetUp() {
+        lifted = true;
+        Sound.PlaySound(elevatorUp, volume);
+    }
 
-    public void SetLifted(bool lifted) {
-        this.lifted = lifted;
-        Sound.PlaySound(lifted ? elevatorUp : elevatorDown, volume);
+    public void SetDown() {
+        lifted = false;
+        Sound.PlaySound(elevatorDown, volume);
     }
 
 }
