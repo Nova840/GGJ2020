@@ -28,7 +28,7 @@ public class Lift : MonoBehaviour {
     }
 
     private void Update() {
-        Vector3 offset = lifted ? Vector3.up * liftedOffset : Vector3.zero;
+        Vector3 offset = lifted ? transform.up * liftedOffset : Vector3.zero;
         transform.position = Vector3.MoveTowards(transform.position, originalPosition + offset, liftSpeed * Time.deltaTime);
     }
 
