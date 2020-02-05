@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2888627270611943857
+--- !u!1 &925044167595384360
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,37 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2888627270611943856}
-  - component: {fileID: 2888627270611943859}
-  - component: {fileID: 2643378428849212902}
+  - component: {fileID: 925044167595384365}
+  - component: {fileID: 925044167595384362}
+  - component: {fileID: 925044167595384363}
   m_Layer: 8
-  m_Name: Thing
+  m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &2888627270611943856
+--- !u!4 &925044167595384365
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2888627270611943857}
+  m_GameObject: {fileID: 925044167595384360}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.898, y: 0.152, z: -0.1}
-  m_LocalScale: {x: 1, y: 0.0375, z: 1}
+  m_LocalPosition: {x: 4.8, y: -2.18, z: -0.1}
+  m_LocalScale: {x: 7.04, y: 0.22, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &2888627270611943859
+--- !u!212 &925044167595384362
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2888627270611943857}
+  m_GameObject: {fileID: 925044167595384360}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -82,13 +82,13 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &2643378428849212902
+--- !u!61 &925044167595384363
 BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2888627270611943857}
+  m_GameObject: {fileID: 925044167595384360}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}

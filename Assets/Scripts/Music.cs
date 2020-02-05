@@ -34,16 +34,16 @@ public class Music : MonoBehaviour {
     }
 
     private void Update() {
-        string sceneName = SceneManager.GetActiveScene().name;
-        if (sceneName != "Game")
+        bool isOnGame = SceneManager.GetActiveScene().name == "Game";
+        if (isOnGame)
             GameMusicStage = 0;
         GameMusicStage = Mathf.Clamp(GameMusicStage, 0, gameMusic.Length);
-        menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, sceneName == "Start" && gameMusic[0].volume == 0 ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
+        menuMusic.volume = Mathf.MoveTowards(menuMusic.volume, !isOnGame && gameMusic[0].volume == 0 ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
 
         for (int i = 0; i < gameMusic.Length; i++) {
-            gameMusic[i].volume = Mathf.MoveTowards(gameMusic[i].volume, sceneName == "Game" && i <= GameMusicStage && menuMusic.volume == 0 && !CompleteGame.AlreadyCompleted ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
+            gameMusic[i].volume = Mathf.MoveTowards(gameMusic[i].volume, isOnGame && i <= GameMusicStage && menuMusic.volume == 0 && !CompleteGame.AlreadyCompleted ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
         }
-        winMusic.volume = Mathf.MoveTowards(winMusic.volume, sceneName == "Game" && menuMusic.volume == 0 && CompleteGame.AlreadyCompleted ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
+        winMusic.volume = Mathf.MoveTowards(winMusic.volume, isOnGame && menuMusic.volume == 0 && CompleteGame.AlreadyCompleted ? masterMusicVolume : 0, fadeSpeed * Time.deltaTime);
 
         if (menuMusic.volume == 0)
             menuMusic.time = 0;

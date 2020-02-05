@@ -5,9 +5,9 @@ using UnityEngine;
 public class SpriteChanger : MonoBehaviour
 {
     [SerializeField]
-    private Sprite[] BGSteps;
+    private Sprite[] BGSteps = null;
     [SerializeField]
-    private bool isPermanent;
+    private bool isPermanent = false;
 
     private bool[] triggered;
 

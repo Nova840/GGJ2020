@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-public class PressurePlate : MonoBehaviour {
+public class Trigger : MonoBehaviour {
 
     [SerializeField]
     private UnityEvent onDown = null;

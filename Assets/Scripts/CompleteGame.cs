@@ -11,9 +11,6 @@ public class CompleteGame : MonoBehaviour {
     [SerializeField]
     private float returnDelay = 5;
 
-    [SerializeField]
-    private float volume = 1;
-
     public static bool AlreadyCompleted { get; private set; } = false;
 
     private void OnCollisionEnter2D(Collision2D collision) {
