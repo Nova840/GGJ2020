@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class FadeObstacle : MonoBehaviour {
 
     [SerializeField]
-    private int buttonNumber = 0;
+    private int objectNumber = 0;
 
     [SerializeField]
     private float fadeSpeed = 1;
@@ -29,8 +29,8 @@ public class FadeObstacle : MonoBehaviour {
     private void Awake() {
         spriteRenderer = GetComponent<SpriteRenderer>();
         allColliders = GetComponentsInChildren<Collider2D>();
-        Trigger.AddToTriggerDown(buttonNumber, new UnityAction(FadeOut));
-        Trigger.AddToTriggerUp(buttonNumber, new UnityAction(FadeIn));
+        Trigger.AddToTriggerDown(objectNumber, new UnityAction(FadeOut));
+        Trigger.AddToTriggerUp(objectNumber, new UnityAction(FadeIn));
     }
 
     private void Update() {

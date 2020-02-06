@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.Events;
 
 public class Trigger : MonoBehaviour {
 
     [SerializeField]
-    private int buttonNumber = 0;
+    private int[] controlObjects = null;
 
     private static List<Trigger> allTriggers = new List<Trigger>();
 
@@ -33,14 +34,14 @@ public class Trigger : MonoBehaviour {
         allTriggers.Remove(this);
     }
 
-    public static void AddToTriggerDown(int buttonNumber, UnityAction action) {
-        List<Trigger> triggers = allTriggers.FindAll(t => t.buttonNumber == buttonNumber);
+    public static void AddToTriggerDown(int objectNumber, UnityAction action) {
+        List<Trigger> triggers = allTriggers.FindAll(t => t.controlObjects.Contains(objectNumber));
         foreach (Trigger trigger in triggers)
             trigger.onDown.AddListener(action);
     }
 
-    public static void AddToTriggerUp(int buttonNumber, UnityAction action) {
-        List<Trigger> triggers = allTriggers.FindAll(t => t.buttonNumber == buttonNumber);
+    public static void AddToTriggerUp(int objectNumber, UnityAction action) {
+        List<Trigger> triggers = allTriggers.FindAll(t => t.controlObjects.Contains(objectNumber));
         foreach (Trigger trigger in triggers)
             trigger.onUp.AddListener(action);
     }

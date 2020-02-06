@@ -1141,7 +1141,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -2660,6 +2670,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3070,6 +3085,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 19
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 19
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3151,7 +3171,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -4056,7 +4086,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -4241,7 +4281,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -4604,6 +4654,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 18
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 18
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4797,6 +4852,11 @@ PrefabInstance:
     - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: buttonNumber
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
@@ -5853,6 +5913,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 13
       objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
+      value: 13
+      objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6040,7 +6105,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 18
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 18
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -6635,8 +6710,28 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[1]
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[2]
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
@@ -6725,6 +6820,11 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: buttonNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
@@ -6910,6 +7010,11 @@ PrefabInstance:
     - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: buttonNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
@@ -8011,7 +8116,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -8297,6 +8412,11 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: buttonNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
@@ -8969,6 +9089,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 16
       objectReference: {fileID: 0}
+    - target: {fileID: 3133134960421024786, guid: 24c9c1e1c3f3048d4a391136ce802021,
+        type: 3}
+      propertyPath: objectNumber
+      value: 16
+      objectReference: {fileID: 0}
     - target: {fileID: 6437618944475190565, guid: 24c9c1e1c3f3048d4a391136ce802021,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9336,7 +9461,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -9926,7 +10061,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -10207,6 +10352,11 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: buttonNumber
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
@@ -12243,7 +12393,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
+        type: 3}
       propertyPath: buttonNumber
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -12568,7 +12728,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -12841,7 +13011,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -12921,7 +13101,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -13061,7 +13251,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
+        type: 3}
       propertyPath: buttonNumber
+      value: 16
+      objectReference: {fileID: 0}
+    - target: {fileID: 2658144475774292988, guid: bda883c0742e8934986bc994e58a40e9,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -13489,6 +13689,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -13774,7 +13979,12 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: buttonNumber
-      value: 5
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
@@ -13853,7 +14063,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -15230,6 +15450,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 17
       objectReference: {fileID: 0}
+    - target: {fileID: 3133134960421024786, guid: 24c9c1e1c3f3048d4a391136ce802021,
+        type: 3}
+      propertyPath: objectNumber
+      value: 17
+      objectReference: {fileID: 0}
     - target: {fileID: 6437618944475190565, guid: 24c9c1e1c3f3048d4a391136ce802021,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -15900,6 +16125,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -16398,6 +16628,11 @@ PrefabInstance:
     - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: buttonNumber
+      value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
       value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
@@ -17478,6 +17713,11 @@ PrefabInstance:
     - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
         type: 3}
       propertyPath: buttonNumber
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 2646060078539612337, guid: 4bcf62d09523a486fbb5fc7839962a24,
@@ -19532,6 +19772,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 14
       objectReference: {fileID: 0}
+    - target: {fileID: -7041265984131343829, guid: 4bcf62d09523a486fbb5fc7839962a24,
+        type: 3}
+      propertyPath: objectNumber
+      value: 14
+      objectReference: {fileID: 0}
     - target: {fileID: 934667120, guid: 4bcf62d09523a486fbb5fc7839962a24, type: 3}
       propertyPath: MinDistance
       value: 0.9912889
@@ -20323,7 +20568,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
       propertyPath: buttonNumber
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6619070836927267114, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6619070836927267117, guid: 0bcb113e6fcdd6c4fa845244c56974f2,
@@ -20403,7 +20658,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 19
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
@@ -21948,8 +22213,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[1]
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
@@ -22778,6 +23058,11 @@ PrefabInstance:
       propertyPath: buttonNumber
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -22861,6 +23146,11 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: buttonNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: objectNumber
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
@@ -24354,7 +24644,17 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
+      propertyPath: controlObjects.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
       propertyPath: buttonNumber
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: controlObjects.Array.data[0]
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,

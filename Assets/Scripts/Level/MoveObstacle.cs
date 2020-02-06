@@ -10,7 +10,7 @@ public class MoveObstacle : MonoBehaviour {
     private Vector3 originalPosition;
 
     [SerializeField]
-    private int buttonNumber = 0;
+    private int objectNumber = 0;
 
     [SerializeField]
     private float liftedOffset = 1;
@@ -29,8 +29,8 @@ public class MoveObstacle : MonoBehaviour {
 
     private void Awake() {
         originalPosition = transform.position;
-        Trigger.AddToTriggerDown(buttonNumber, new UnityAction(SetUp));
-        Trigger.AddToTriggerUp(buttonNumber, new UnityAction(SetDown));
+        Trigger.AddToTriggerDown(objectNumber, new UnityAction(SetUp));
+        Trigger.AddToTriggerUp(objectNumber, new UnityAction(SetDown));
     }
 
     private void Update() {
