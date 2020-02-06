@@ -51,17 +51,16 @@ public class PlayerController : MonoBehaviour {
     private bool wasGrounded = true;
 
     private void Start() {
-        rb2 = this.gameObject.GetComponent<Rigidbody2D>();
-        ani = this.gameObject.GetComponent<Animator>();
-        feet = this.gameObject.transform.Find("Shoes-Standing").gameObject.GetComponent<SpriteRenderer>();
+        rb2 = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
+        feet = transform.Find("Shoes-Standing").GetComponent<SpriteRenderer>();
     }
 
     private void Update() {
         bool grounded = IsGrounded();
         if (grounded && Input.GetButtonDown("Jump" + playerNum))
             shouldJump = true;
-        if (grounded)
-            footstepsSource.volume = Mathf.InverseLerp(minXVelocityForSound, maxXVelocityForSound, Mathf.Abs(rb2.velocity.x));
+        footstepsSource.volume = grounded ? Mathf.InverseLerp(minXVelocityForSound, maxXVelocityForSound, Mathf.Abs(rb2.velocity.x)) : 0;
     }
 
     void FixedUpdate() {
@@ -76,7 +75,7 @@ public class PlayerController : MonoBehaviour {
         }
 
         if (shouldJump) {
-            Sound.PlaySound( jumpingSound, volume);
+            Sound.PlaySound(jumpingSound, volume);
             shouldJump = false;
             Vector2 jumpForce = new Vector2(0, jumpScale * 10);
             rb2.AddForce(jumpForce);
