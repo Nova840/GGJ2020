@@ -34,13 +34,15 @@ public class Trigger : MonoBehaviour {
     }
 
     public static void AddToTriggerDown(int buttonNumber, UnityAction action) {
-        Trigger trigger = allTriggers.Find(t => t.buttonNumber == buttonNumber);
-        trigger.onDown.AddListener(action);
+        List<Trigger> triggers = allTriggers.FindAll(t => t.buttonNumber == buttonNumber);
+        foreach (Trigger trigger in triggers)
+            trigger.onDown.AddListener(action);
     }
 
     public static void AddToTriggerUp(int buttonNumber, UnityAction action) {
-        Trigger trigger = allTriggers.Find(t => t.buttonNumber == buttonNumber);
-        trigger.onUp.AddListener(action);
+        List<Trigger> triggers = allTriggers.FindAll(t => t.buttonNumber == buttonNumber);
+        foreach (Trigger trigger in triggers)
+            trigger.onUp.AddListener(action);
     }
 
     private void OnTriggerEnter2D(Collider2D collision) {
