@@ -17,6 +17,7 @@ public class CompleteGame : MonoBehaviour {
         if (!AlreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
             AlreadyCompleted = true;
             winCanvas.SetActive(true);
+            GetComponent<Animator>().SetBool("Won",true);
             StartCoroutine(ReturnToStart());
         }
     }
