@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour {
 
     private bool wasGrounded = true;
 
+    public int PlayerNum { get => playerNum; }
+
     private void Start() {
         rb2 = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();

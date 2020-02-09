@@ -17,7 +17,11 @@ public class CompleteGame : MonoBehaviour {
         if (!AlreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
             AlreadyCompleted = true;
             winCanvas.SetActive(true);
-            GetComponent<Animator>().SetBool("Won",true);
+            transform.parent.GetComponent<Animator>().SetInteger("Player", transform.parent.GetComponent<PlayerController>().PlayerNum);
+            transform.parent.GetComponent<Animator>().SetBool("Won", true);
+            collision.collider.transform.parent.GetComponent<Animator>().SetInteger("Player", collision.collider.transform.parent.GetComponent<PlayerController>().PlayerNum);
+            collision.collider.transform.parent.GetComponent<Animator>().SetBool("Won", true);
+
             StartCoroutine(ReturnToStart());
         }
     }
