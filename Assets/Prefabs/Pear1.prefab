@@ -75,7 +75,7 @@ MonoBehaviour:
     type: 3}
   minFireworks: 5
   maxFireworks: 15
-  returnDelay: 15
+  returnDelay: 8
 --- !u!1 &6101583729306348273
 GameObject:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
     type: 3}
   minFireworks: 5
   maxFireworks: 15
-  returnDelay: 15
+  returnDelay: 8
 --- !u!95 &8694905559385036856
 Animator:
   serializedVersion: 3
@@ -587,4 +587,4 @@ MonoBehaviour:
     type: 3}
   minFireworks: 5
   maxFireworks: 15
-  returnDelay: 15
+  returnDelay: 8
