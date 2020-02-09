@@ -71,6 +71,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
+  fireworkPrefab: {fileID: 3218647724065933036, guid: 01de5df3bf8b4614f8430fc6329a5c18,
+    type: 3}
+  minFireworks: 5
+  maxFireworks: 15
   returnDelay: 15
 --- !u!1 &6101583729306348273
 GameObject:
@@ -322,6 +326,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
+  fireworkPrefab: {fileID: 3218647724065933036, guid: 01de5df3bf8b4614f8430fc6329a5c18,
+    type: 3}
+  minFireworks: 5
+  maxFireworks: 15
   returnDelay: 15
 --- !u!95 &8694905559385036856
 Animator:
@@ -575,4 +583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   winCanvas: {fileID: 0}
+  fireworkPrefab: {fileID: 3218647724065933036, guid: 01de5df3bf8b4614f8430fc6329a5c18,
+    type: 3}
+  minFireworks: 5
+  maxFireworks: 15
   returnDelay: 15
