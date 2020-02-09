@@ -9,16 +9,15 @@ public class CompleteGame : MonoBehaviour {
     private GameObject winCanvas = null;
 
     [SerializeField]
-    private GameObject fireworkPrefab;
+    private GameObject fireworkPrefab = null;
+
     [SerializeField]
-    private int minFireworks = 5, maxFireworks=15;
+    private int minFireworks = 5, maxFireworks = 15;
+
     [SerializeField]
     private float returnDelay = 5;
-
-
+    
     public static bool AlreadyCompleted { get; private set; } = false;
-
-
 
     private void OnCollisionEnter2D(Collision2D collision) {
         if (!AlreadyCompleted && collision.gameObject.layer == LayerMask.NameToLayer("Player")) {
@@ -75,7 +74,8 @@ public class CompleteGame : MonoBehaviour {
         }
 
     }
-        private void OnDestroy() {
+
+    private void OnDestroy() {
         AlreadyCompleted = false;
     }
 
