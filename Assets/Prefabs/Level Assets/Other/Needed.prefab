@@ -122,6 +122,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4784379121125872630}
   - component: {fileID: 964041584243722349}
+  - component: {fileID: 5194351134826535880}
   m_Layer: 0
   m_Name: Left Spawnpoint
   m_TagString: Untagged
@@ -156,6 +157,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   plyrScale: 1
+--- !u!114 &5194351134826535880
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784379121125872631}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd862fe3a43903c45a34a8b062b6ceab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoColor: {r: 0.45882356, g: 0.8078432, b: 0.23529413, a: 0}
 --- !u!1 &4784379121481806227
 GameObject:
   m_ObjectHideFlags: 0
@@ -165,6 +179,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4784379121481806226}
+  - component: {fileID: 5421921560515927542}
   m_Layer: 0
   m_Name: Right Spawnpoint
   m_TagString: Untagged
@@ -186,6 +201,19 @@ Transform:
   m_Father: {fileID: 4784379121076046941}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5421921560515927542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4784379121481806227}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd862fe3a43903c45a34a8b062b6ceab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gizmoColor: {r: 0.9725491, g: 0.30588236, b: 0.1764706, a: 0}
 --- !u!1001 &148945580497923563
 PrefabInstance:
   m_ObjectHideFlags: 0
