@@ -2032,6 +2032,11 @@ PrefabInstance:
       propertyPath: objectNumber
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: liftSpeed
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -5382,7 +5387,7 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: liftedOffset
-      value: -1
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
@@ -9299,6 +9304,11 @@ PrefabInstance:
     - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}
       propertyPath: objectNumber
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: liftSpeed
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
