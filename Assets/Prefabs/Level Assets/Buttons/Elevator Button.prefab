@@ -147,12 +147,12 @@ PrefabInstance:
         type: 3}
       propertyPath: pressedSound
       value: 
-      objectReference: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
+      objectReference: {fileID: 8300000, guid: b56a96f7f747c1b4f80776ea91afc64d, type: 3}
     - target: {fileID: 4734817888152042898, guid: e1d672375e965469496b2ae84dd51fd1,
         type: 3}
       propertyPath: releasedSound
       value: 
-      objectReference: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
+      objectReference: {fileID: 8300000, guid: 7df3db90ffddf2249954951576fcc657, type: 3}
     - target: {fileID: 4734817888152042898, guid: e1d672375e965469496b2ae84dd51fd1,
         type: 3}
       propertyPath: volume

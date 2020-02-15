@@ -1589,6 +1589,16 @@ PrefabInstance:
       propertyPath: controlObjects.Array.data[0]
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: pressedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: b56a96f7f747c1b4f80776ea91afc64d, type: 3}
+    - target: {fileID: 7475711023235562458, guid: 9a2605f62371cd042926aa2b36d25c28,
+        type: 3}
+      propertyPath: releasedSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 7df3db90ffddf2249954951576fcc657, type: 3}
     - target: {fileID: 7475711023235562461, guid: 9a2605f62371cd042926aa2b36d25c28,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1667,6 +1677,16 @@ PrefabInstance:
         type: 3}
       propertyPath: objectNumber
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: elevatorUp
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1046014417537843724, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
+        type: 3}
+      propertyPath: elevatorDown
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 1046014417537843725, guid: 7ce494fe609d4594ca1095ba6a7d16e1,
         type: 3}

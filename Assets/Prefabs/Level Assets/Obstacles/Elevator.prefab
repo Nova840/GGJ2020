@@ -49,8 +49,8 @@ MonoBehaviour:
   objectNumber: 0
   liftedOffset: 1
   liftSpeed: 1
-  elevatorUp: {fileID: 8300000, guid: 2462f0bd1771e1c45a28fd27c2747ac2, type: 3}
-  elevatorDown: {fileID: 8300000, guid: d49580866a69a2d439912cef66bf4203, type: 3}
+  elevatorUp: {fileID: 0}
+  elevatorDown: {fileID: 0}
   volume: 0.5
 --- !u!212 &1046014417537843726
 SpriteRenderer:
