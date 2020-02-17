@@ -65,7 +65,7 @@ MonoBehaviour:
   sprites:
   - {fileID: 21300000, guid: 6583a0d83b3f54f2a8c4c6c9a122b55e, type: 3}
   - {fileID: 21300000, guid: ae0637ffbfda5444f81348396b30d07e, type: 3}
-  isPermanent: 0
+  isBackground: 0
 --- !u!1001 &1904699468121717944
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -148,6 +148,11 @@ PrefabInstance:
       propertyPath: pressedSound
       value: 
       objectReference: {fileID: 8300000, guid: dac51db20175f0f4580fa4a07695cf07, type: 3}
+    - target: {fileID: 4734817888152042898, guid: e1d672375e965469496b2ae84dd51fd1,
+        type: 3}
+      propertyPath: volume
+      value: 0.066
+      objectReference: {fileID: 0}
     - target: {fileID: 4734817888152042901, guid: e1d672375e965469496b2ae84dd51fd1,
         type: 3}
       propertyPath: m_LocalPosition.x

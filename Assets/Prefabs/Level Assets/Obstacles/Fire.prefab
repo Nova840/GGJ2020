@@ -50,11 +50,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2f7cd4fed964824195b379c671fd606, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  buttonNumber: 0
+  objectNumber: 0
   fadeSpeed: 1
   fadeInColor: {r: 1, g: 1, b: 1, a: 1}
   fadeOutColor: {r: 1, g: 1, b: 1, a: 0}
-  disableCollider: 1
+  disableColliders: 1
 --- !u!212 &2646060078539612336
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -152,7 +152,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a44c483412920b14b988db0d58bc6922, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.478
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -370,7 +370,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e60d73d31b8707749b08c18d40dfc987, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.34
   m_Pitch: 1
   Loop: 1
   Mute: 0
